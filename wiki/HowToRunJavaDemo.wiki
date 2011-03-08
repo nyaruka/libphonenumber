@@ -6,10 +6,10 @@ This document explains how to build and run the demo of the Java version of libp
 
 ==Detailed steps==
 ===1. Installing Google App Engine===
-Following the [http://code.google.com/appengine/docs/java/gettingstarted/installing.html instructions] to install the Java SDK of Google App Engine, assuming Eclipse and the Google Plugin are not used.
+Follow the [http://code.google.com/appengine/docs/java/gettingstarted/installing.html instructions] to install the Java SDK of Google App Engine, assuming Eclipse and the Google Plugin are not used.
 
 ===2. Checkout the demo code===
-Checkout out the demo directory if you haven't done so:
+Check out out the demo directory if you haven't already done so:
 
 svn checkout http://libphonenumber.googlecode.com/svn/trunk/java/demo libphonenumber-read-only
 
@@ -22,7 +22,7 @@ First copy the jar file of libphonenumber to demo/war/WEB-INF/lib/. Then start t
 cd demo
 ant runserver
 }}}
-This will start a server on you localhost, and you can try it out by pointing your browser to http://localhost:8080/
+This will start a server on your localhost, and you can try it out by pointing your browser to http://localhost:8080/
 
 If you get a warning from App Engine to ask you to upgrade your JRE to Java 1.6 or later, you might need to install Java 1.6 and point your JAVA_HOME to it. To see your current JAVA_HOME, use
 {{{
