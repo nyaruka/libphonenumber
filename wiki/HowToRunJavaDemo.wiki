@@ -2,7 +2,7 @@
 Shaopeng Jia, Match 8th, 2011
 
 ==About this document==
-This document explains how to build and run the demo of the Java version of libphonenumber from the command line or using Eclipse in *Linux* or *Mac*, using Google App Engine. By following the instructions here, you could build a demo running against any revision of the Java code by supplying a jar file you build on your own, or downloading one from the [http://code.google.com/p/libphonenumber/downloads/list Downloads page].
+This document explains how to build and run the demo of the Java version of libphonenumber, either from the command line or using Eclipse in *Linux* or *Mac*, using Google App Engine. By following the instructions here, you could build a demo running against any revision of the Java code by supplying a jar file you build on your own, or downloading one from the [http://code.google.com/p/libphonenumber/downloads/list Downloads page].
 
 ==Detailed steps for Eclipse users==
 ===1. Installing Google App Engine===
