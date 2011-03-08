@@ -6,7 +6,7 @@ This document explains how to build and run the demo of the Java version of libp
 
 ==Detailed steps==
 ===1. Installing Google App Engine===
-Following the [http://code.google.com/appengine/docs/java/gettingstarted/installing.html instructions] to install the Java SDK of Google App Engine, assuming cxlipse and the Google Plugin are not used.
+Following the [http://code.google.com/appengine/docs/java/gettingstarted/installing.html instructions] to install the Java SDK of Google App Engine, assuming Eclipse and the Google Plugin are not used.
 
 ===2. Checkout the demo code===
 Checkout out the demo directory if you haven't done so:
