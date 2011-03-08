@@ -6,7 +6,7 @@ This document explains how to build and run the demo of the Java version of libp
 
 ==Detailed steps for non-Eclipse users==
 ===1. Installing Google App Engine===
-Follow the section "Getting the SDK" from [http://code.google.com/appengine/docs/java/gettingstarted/installing.html instructions] to install the Java SDK of Google App Engine.
+Follow the section "Getting the SDK" from [http://code.google.com/appengine/docs/java/gettingstarted/installing.html instructions] to install the Java SDK of Google App Engine. This document assumes it is named as appengine-java-sdk (you may want to rename the directory after unpacking).
 
 ===2. Checkout the demo code===
 Check out the demo directory if you haven't already done so:
@@ -15,7 +15,7 @@ Check out the demo directory if you haven't already done so:
 svn checkout http://libphonenumber.googlecode.com/svn/trunk/java/demo libphonenumber-read-only
 }}}
 
-Place the demo directory next to the unpacked appengine sdk directory. This document assumes it is named as appengine-java-sdk (you may want to rename the directory after unpacking).
+Place the demo directory next to the unpacked appengine sdk directory. 
 
 If you save the appengine sdk directory in a different place, you will need to update `demo/build.xml` to point to the right location.
 
