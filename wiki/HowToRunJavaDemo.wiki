@@ -11,18 +11,36 @@ Follow the section "Getting the SDK" from [http://code.google.com/appengine/docs
 ===2. Checkout the demo code===
 Check out the demo directory if you haven't already done so:
 
+{{{
 svn checkout http://libphonenumber.googlecode.com/svn/trunk/java/demo libphonenumber-read-only
+}}}
 
 Place the demo directory next to the unpacked appengine sdk directory. This document assumes it is named as appengine-java-sdk (you may want to rename the directory after unpacking).
 
-===3. Run the demo code ===
+If you save the appengine sdk directory in a different place, you will need to update `demo/build.xml` to point to the right location.
 
-First copy the jar file of libphonenumber to demo/war/WEB-INF/lib/. Then start the server:
+===3. Get a libphonenumber jar===
+
+A `libphonenumber` jar needs to be saved under `demo/war/WEB-INF/lib/` 
+
+You can either download this from the [http://code.google.com/p/libphonenumber/downloads/list Downloads page], or you can build it yourself:
+
+{{{
+svn checkout http://libphonenumber.googlecode.com/svn/trunk/java libphonenumber-read-only
+cd java
+ant jar
+}}}
+
+===4. Run the demo code ===
+
+Start the server:
 {{{
 cd demo
 ant runserver
 }}}
 This will start a server on your localhost, and you can try it out by pointing your browser to http://localhost:8080/
+
+===Troubleshooting===
 
 If you get a warning from App Engine to ask you to upgrade your JRE to Java 1.6 or later, you might need to install Java 1.6 and point your JAVA_HOME to it. To see your current JAVA_HOME, use
 {{{
@@ -32,15 +50,16 @@ To see the list of JDKs currently installed, use
 {{{
 update-java-alternatives -l
 }}}
-To reset the JAVA_HOME, use
+To reset the `JAVA_HOME`, use
 {{{
 export JAVA_HOME=[path to Java 1.6 SDK]/jre
 }}}
 Now you should be able to use `ant runserver` to start the server on your localhost. 
 
-In case you want to upload the demo to a App Engine, follow the steps to [http://code.google.com/appengine/docs/java/gettingstarted/uploading.html register a application with App Engine] first. Then type the following command:
+===Uploading your own demo App Engine application===
+
+In case you want to upload the demo to your own App Engine application, follow the steps to [http://code.google.com/appengine/docs/java/gettingstarted/uploading.html register a application with App Engine] first. Then type the following command:
 {{{
 ../appengine-java-sdk/bin/appcfg.sh update war
 }}}
 The demo will then be uploaded to `http://application-id.appspot.com/`
- 
