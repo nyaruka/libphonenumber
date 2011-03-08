@@ -1,4 +1,4 @@
-=Steps on running the Java Demo=
+= How to run the Java Demo=
 Shaopeng Jia, Match 8th, 2011
 
 ==About this document==
