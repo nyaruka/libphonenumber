@@ -1,0 +1,20 @@
+How to Integrate the Java Version in Your Maven project
+
+== Introduction ==
+
+This document explains how to depend on the Java version of libphonenumber from your Maven project.
+
+== Details ==
+
+The Java version of libphonenumber is available via the central Maven repository. Add libphonenumber as a dependency in your POM using the following information:
+{{{
+	<dependency>
+		<groupId>com.googlecode.libphonenumber</groupId>
+		<artifactId>libphonenumber</artifactId>
+		<version>3.0.0</version>
+	</dependency>
+}}}
+New versions are released into [http://repo1.maven.org/maven2/com/googlecode/libphonenumber/libphonenumber/ central Maven repository] roughly twice a month. You are advised to always use the latest version, which contains bug fixes to the most recent phone number plan changes.
+
+=== Acknowledgement ===
+garretdwilson at gmail.com contributed to the content of this document.
