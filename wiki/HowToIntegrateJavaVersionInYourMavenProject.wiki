@@ -1,4 +1,4 @@
-How to Integrate the Java Version in Your Maven project
+=How to integrate the Java version in your Maven project=
 
 == Introduction ==
 
