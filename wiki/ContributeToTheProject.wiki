@@ -1,0 +1,26 @@
+=How to Contribute to libphonenumber=
+
+Shaopeng Jia, May 25, 2011
+
+== Introduction ==
+
+This document explains how to contribute patches to the libphonenumber project.
+
+== Details ==
+
+The libphonenumber is a project for the opensource community, and we are glad to accept patches from the community to make it better. Here are a few simple steps you could take to make a code contribution to the project:
+  # Before starting to write a patch, read the [http://code.google.com/p/libphonenumber/issues/list open issues] and the [https://groups.google.com/group/libphonenumber-discuss discussion group] to see if similar issues are already being addressed.
+  # If the issue is not currently being addressed, [http://code.google.com/p/libphonenumber/issues/entry create an issue] or start a discussion in the [https://groups.google.com/group/libphonenumber-discuss discussion group].
+  # Once an agreement is reached on how to address the issue, start to work on a patch and tested it in your local environment.
+  # Meanwhile, sign the CLA for contributing to libphonenumber:
+    * If you are contributing as an individual, sign the [http://code.google.com/legal/individual-cla-v1.0.html individual CLA]
+    * If you are contributing as part of a corporation, sign the [http://code.google.com/legal/corporate-cla-v1.0.html corporate CLA]
+  # Upload the patch to [http://codereview.appspot.com/ Rietveld Code Review Tool] for code review:
+    * Click _Create Issue_
+    * Click _Go to the Create Issue Form_
+    * Fill in the appropriate _Subject_ and _Description_
+    * Choose _Google libphonenumber - *trunk*_ under _Base URL_, and leave _Base_ blank
+    * Add one of the owner/committer in _Reviewers_
+    * Upload the patch under _Data_
+    * Click _Create Issue_
+  # Once the patch is reviewed, one of the owner/committer will help you commit the change.
