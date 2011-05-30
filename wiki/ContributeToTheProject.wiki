@@ -24,3 +24,20 @@ The libphonenumber is a project for the opensource community, and we are glad to
     * Upload the patch under _Data_
     * Click _Create Issue_
   # Once the patch is reviewed, one of the owner/committers will commit the change on your behalf.
+
+== Notes on metadata patch ==
+If you are planning to test a metadata change have you made, you need to generate the metadata binary files first before running the unittests or generating the jar:
+
+{{{
+cd java
+ant clean
+ant compile
+java -cp build/classes com.google.i18n.phonenumbers.BuildMetadataProtoFromXml ../resources/PhoneNumberMetaData.xml src/ false
+java -cp build/classes com.google.i18n.phonenumbers.BuildMetadataProtoFromXml ../resources/PhoneNumberMetaDataForTesting.xml test/ true
+}}}
+
+Once this is done, you could run the unittests with:
+{{{
+ant junit
+}}}
+Or run the demo on appengine following the instructions [http://code.google.com/p/libphonenumber/wiki/HowToRunJavaDemo here].
