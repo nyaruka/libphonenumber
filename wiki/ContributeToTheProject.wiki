@@ -26,7 +26,7 @@ The libphonenumber is a project for the opensource community, and we are glad to
   # Once the patch is reviewed, one of the owner/committers will commit the change on your behalf.
 
 == Notes on metadata patch ==
-If you are planning to test a metadata change have you made, you need to generate the metadata binary files first before running the unittests or generating the jar:
+If you are planning to test a metadata change you have made, you need to generate the metadata binary files first before running the unittests or generating the jar:
 
 {{{
 cd java
