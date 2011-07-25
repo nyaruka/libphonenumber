@@ -19,11 +19,11 @@ Place the java directory next to the unpacked appengine sdk directory.
 
 If you save the appengine sdk directory in a different place, you will need to update `java/demo/build.xml` to point to the right location.
 
-===3. Get a libphonenumber jar===
+===3. Get the jars for the phone number library===
 
-A `libphonenumber` jar needs to be saved under `demo/war/WEB-INF/lib/` 
+The `libphonenumber` and `offline-geocoder` jars need to be saved under `demo/war/WEB-INF/lib/`.
 
-You can either download this from the [http://code.google.com/p/libphonenumber/downloads/list Downloads page], or you can build it yourself:
+You can either download them from the [http://code.google.com/p/libphonenumber/downloads/list Downloads page], or you can build them yourself:
 
 {{{
 svn checkout http://libphonenumber.googlecode.com/svn/trunk/java libphonenumber-read-only
