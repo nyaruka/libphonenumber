@@ -11,9 +11,19 @@ The Java version of libphonenumber is available via the central Maven repository
 	<dependency>
 		<groupId>com.googlecode.libphonenumber</groupId>
 		<artifactId>libphonenumber</artifactId>
-		<version>3.7</version>
+		<version>4.3</version>
 	</dependency>
 }}}
+
+You can additionally use the offline phone number geocoder adding:
+{{{
+	<dependency>
+		<groupId>com.googlecode.libphonenumber</groupId>
+		<artifactId>geocoder</artifactId>
+		<version>1.7</version>
+	</dependency>
+}}}
+
 New versions are released into [http://repo1.maven.org/maven2/com/googlecode/libphonenumber/libphonenumber/ central Maven repository] roughly twice a month. You are advised to always use the latest version, which contains bug fixes to the most recent phone number plan changes.
 
 === Acknowledgement ===
