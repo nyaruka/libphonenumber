@@ -15,7 +15,7 @@ The Java version of libphonenumber is available via the central Maven repository
 	</dependency>
 }}}
 
-You can additionally use the offline phone number geocoder adding:
+You can additionally use the offline phone number geocoder by adding:
 {{{
 	<dependency>
 		<groupId>com.googlecode.libphonenumber</groupId>
