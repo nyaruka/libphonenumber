@@ -9405,7 +9405,7 @@
           </leadingDigits>
           <format>$1 $2</format>
         </numberFormat>
-        <numberFormat pattern="(8\d{2})(\d{3,4})(\d{3,4})">
+        <numberFormat pattern="(8\d{2})(\d{3,4})(\d{3,7})">
           <leadingDigits>8[1-35-9]</leadingDigits>
           <format>$1-$2-$3</format>
         </numberFormat>
@@ -9425,8 +9425,8 @@
         </numberFormat>
       </availableFormats>
       <generalDesc>
-        <nationalNumberPattern>[1-9]\d{6,10}</nationalNumberPattern>
-        <possibleNumberPattern>\d{5,11}</possibleNumberPattern>
+        <nationalNumberPattern>[1-9]\d{6,13}</nationalNumberPattern>
+        <possibleNumberPattern>\d{5,14}</possibleNumberPattern>
       </generalDesc>
       <fixedLine>
         <!-- Area codes taken from wikipedia, with missing ones added from
@@ -9590,9 +9590,9 @@
               7[178]9
             )
           )\d{5,6}|
-          8[1-35-9]\d{7,9}
+          8[1-35-9]\d{7,12}
         </nationalNumberPattern>
-        <possibleNumberPattern>\d{9,11}</possibleNumberPattern>
+        <possibleNumberPattern>\d{9,14}</possibleNumberPattern>
         <exampleNumber>812345678</exampleNumber>
       </mobile>
       <tollFree>
